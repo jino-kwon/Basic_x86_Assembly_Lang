@@ -1,19 +1,12 @@
 ;Assembling and Linking instruction
 ;first go to your csc215 folder using cd command
-;set path="c:\Users\jino\Desktop\Masm615"
-;ml /coff /c /I C:\Users\jino\Desktop\Masm615\Include Skeleton.asm
-;link32 /LIBPATH:C:\Users\jino\Desktop\Masm615\LIB /SUBSYSTEM:console Skeleton.obj irvine32.lib kernel32.lib user32.lib
-;command arg1 arg2 arg3 and ';' is a comment
+;set path="###"
+;ml /coff /c /I C:\### Skeleton.asm
+;link32 /LIBPATH:C:\###\Masm615\LIB /SUBSYSTEM:console Skeleton.obj irvine32.lib kernel32.lib user32.lib
+;Using library files from Masm615 here.
 
 TITLE Skeleton		(Skeleton.asm)
 INCLUDE Irvine32.inc
-
-COMMENT !
-this is for multiline comments
-'include' simply copies and pastes the text in this file
-data segment is like static or global variables
-code segment outlines executions
-!
 
 .data
 hi BYTE '"Hello I am your skeleton!!" I said.', 0Dh,0Ah,0;
@@ -24,7 +17,7 @@ in2 DWORD 4   ; int in2=4;
     DWORD 6,7,8
 ar1 DWORD ?,10,11  ;DWORD is 4bytes so 12 in total
 ar1Siz=($-ar1)     ;you will get c in hexadecimal
-chrr BYTE '"a',"'a"
+chrr BYTE '"a',"'a"  ;this is a way to write a string, "a'a 
 
 .code
 main PROC    ; this is like int main(){
@@ -35,7 +28,7 @@ main PROC    ; this is like int main(){
 
 	mov eax, ar1Siz
 COMMENT !
-The first is destination operand(eax) and the second is source operand(ar1Siz). both operands cannot be in RAM memory. the same as eax=ar1Siz in c++.
+The first is destination operand(eax) and the second is source operand(ar1Siz). both operands CANNOT be in RAM memory. the same as eax=ar1Siz in c++.
 in c++, we can't assign int value to double, but you can in assembly lang as long as two variables take the same amount of space.
 !
 	call writeInt
