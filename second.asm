@@ -1,9 +1,3 @@
-;Assembling and Linking instruction
-;first go to your csc215 folder using cd command
-;set path="c:###"
-;ml /coff /c /I C:\###\Include second.asm
-;link32 /LIBPATH:C:\### /SUBSYSTEM:console second.obj irvine32.lib kernel32.lib user32.lib
-TITLE second		(second.asm)
 INCLUDE Irvine32.inc
 
 .data
