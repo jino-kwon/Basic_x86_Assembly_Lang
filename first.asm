@@ -1,9 +1,4 @@
 ;Assembling and Linking instruction
-;first go to your csc215 folder using cd command
-;set path="##"
-;ml /coff /c /I ###\Include first.asm
-;link32 /LIBPATH:###\Masm615\LIB /SUBSYSTEM:console first.obj irvine32.lib kernel32.lib user32.lib
-;using Masm615 library files here.
 
 TITLE first
 INCLUDE Irvine32.inc
