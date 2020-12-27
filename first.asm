@@ -26,7 +26,8 @@ main PROC    ; this is like int main(){
 COMMENT !
 The first is destination operand(eax) and the second is source operand(ar1Siz). both operands cannot be in RAM memory. the same as eax=ar1Siz in c++.
 in c++, we can't assign int value to double, but you can in assembly lang as long as two variables take the same amount of space.
-* this is a multi-line comment
+
+this is a multi-line comment
 !
 	call writeInt
 	call dumpRegs
