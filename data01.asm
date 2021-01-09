@@ -1,7 +1,6 @@
 ;Assembling and Linking instruction
-;this is a comment line
 
-TITLE first
+TITLE data01
 INCLUDE Irvine32.inc
 
 .data
