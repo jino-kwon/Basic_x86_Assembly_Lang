@@ -1,10 +1,4 @@
-;Lab 10
-;Jino Kwon
-;set path="c:\Users\jino\Desktop\Masm615"
-;ml /coff /c /I C:\Users\jino\Desktop\Masm615\Include quiz.asm
-;link32 /LIBPATH:C:\Users\jino\Desktop\Masm615\LIB /SUBSYSTEM:console quiz.obj irvine32.lib kernel32.lib user32.lib
-
-TITLE quiz	(quiz.asm)
+TITLE quiz	(fourth.asm)
 INCLUDE Irvine32.inc
 
 .data
@@ -56,19 +50,15 @@ L1:
 main ENDP
 END main
 
-///////////////
-assembly always works in bytes.
-
-'mul num' works. can't use literals for multiple?
-
+COMMENT !
 in data segment,
 you can declare a pointer like
 pInts DWORDS ints
 but in code, you have to specify "ints OFFSET"
 
 Q6)
-eax = ebx*8-num
-= sign means the latter part is calculated at a assembly time.
+Why does this NOT make any sense? : eax = ebx*8-num
+'=' sign means the latter part is calculated at a assembly time.
 (1) register name can't be a symbolic constant. EAX is already a register
 (2) both values at ebx or num can't be known at assembly time. You don't know what's stored in ebx or num at assembly time.
-eax = ebx*8-num
+!
