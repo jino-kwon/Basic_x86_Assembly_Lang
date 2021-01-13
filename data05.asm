@@ -1,10 +1,4 @@
-;Lab 9
-;Jino Kwon
-;set path="c:\Users\jino\Desktop\Masm615"
-;ml /coff /c /I C:\Users\jino\Desktop\Masm615\Include lab9.asm
-;link32 /LIBPATH:C:\Users\jino\Desktop\Masm615\LIB /SUBSYSTEM:console lab9.obj irvine32.lib kernel32.lib user32.lib
-
-TITLE lab9	(lab9.asm)
+TITLE data05.asm
 INCLUDE Irvine32.inc
 
 .data
