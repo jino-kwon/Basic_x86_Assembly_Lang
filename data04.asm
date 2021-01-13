@@ -1,4 +1,4 @@
-TITLE quiz	(fourth.asm)
+TITLE data04
 INCLUDE Irvine32.inc
 
 .data
@@ -7,7 +7,7 @@ num DWORD ?
 ;initialized with a random number 3
 ints WORD 93 DUP(3)
 ;pointer to the array
-;ptr DWORD ints﻿﻿
+;ptr DWORD ints
 
 .code
 main PROC
