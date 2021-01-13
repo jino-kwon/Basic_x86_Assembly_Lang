@@ -1,8 +1,5 @@
-TITLE Third
+TITLE data03
 INCLUDE Irvine32.inc
-
-COMMENT !
-!
 
 .data
 hi BYTE '"Hello I am your data lecture!!" I said.', 0Dh,0Ah,0
