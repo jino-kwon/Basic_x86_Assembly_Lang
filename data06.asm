@@ -1,8 +1,3 @@
-;Lab 10
-;Jino Kwon
-;set path="c:\Users\jino\Desktop\Masm615"
-;ml /coff /c /I C:\Users\jino\Desktop\Masm615\Include lab10.asm
-;link32 /LIBPATH:C:\Users\jino\Desktop\Masm615\LIB /SUBSYSTEM:console lab10.obj irvine32.lib kernel32.lib user32.lib
 
 TITLE lab10	(lab10.asm)
 INCLUDE Irvine32.inc
