@@ -1,10 +1,4 @@
-;Lab 10
-;Jino Kwon
-;set path="c:\Users\jino\Desktop\Masm615"
-;ml /coff /c /I C:\Users\jino\Desktop\Masm615\Include quiz.asm
-;link32 /LIBPATH:C:\Users\jino\Desktop\Masm615\LIB /SUBSYSTEM:console quiz.obj irvine32.lib kernel32.lib user32.lib
-
-TITLE quiz	(quiz.asm)
+TITLE data08
 INCLUDE Irvine32.inc
 
 .data
@@ -56,7 +50,7 @@ L1:
 main ENDP
 END main
 
-///////////////
+Note:
 assembly always works in bytes.
 
 'mul num' works. can't use literals for multiple?
