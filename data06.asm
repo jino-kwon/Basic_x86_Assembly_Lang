@@ -1,5 +1,5 @@
 
-TITLE lab10	(lab10.asm)
+TITLE data06	(data06.asm)
 INCLUDE Irvine32.inc
 
 .data
